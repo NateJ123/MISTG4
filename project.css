@@ -1,0 +1,44 @@
+h1 {
+    color: #50C9CE;
+}
+h3 {
+    color: #50C9CE;
+}
+.gridman {
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.gridman h3 {
+    margin-left: 11.5%;
+}
+.gridman img {
+    border-radius: 50%;
+}
+.gridman img:hover {
+    width: 110px;
+    height: 110px;
+   
+}
+.first-div img{
+    border-radius: 0%;
+    height:500px;
+    width:750px;
+}
+.nostretch img {
+    object-fit: cover;
+    border-radius: 0%;
+
+    
+}
+.center {
+    text-align: center;
+    
+}
+body {
+    background-color: #2E382E;
+}

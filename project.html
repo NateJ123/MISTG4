@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = 'project.css'>
+
+</head>
+<body>
+    <script>
+        function changeContent(newContent) {
+            const contentDiv = document.getElementById('content-display')
+            contentDiv.innerHTML = newContent;
+        }
+    </script>
+    <h1>Responsible Consumption and Production</h1>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div>
+        <img  class = 'nostretch' src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsUWNzmATncFNt3Xk4lQWR2kbNnfVYkByWcQ&s' height = 200px width = 100%>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <h1 class = 'center'> Data Visualizations</h1>
+    <div class = 'gridman'>
+        
+        <div>
+            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstPWQROxn28TVPOV4hCoGXuOxVbx1FH3TNQ&s' width = 100px height = 100px onclick= "changeContent('<div class =\'first-div\'> <img src =\'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAAC9CAMAAACTb6i8AAAA5FBMVEX///9wiLBogqxlf6vz9fhrhK7p7fOqt87Y3uiisMrw8vaaqsa/ydp3jbPN1OKEmLqQosDt7e3Pz8/Hx8f4+PjV1dX09PTZ2dnCwsK7u7ve3t7m5ua0tLTKysq9vb2srKyioqKenp7zxMJ4ACCVlZUADj7h5OkAIUeRkZEAHESytr0AAACFhYUAADoAGEN3eHdiYmJZd6YxMjFXV1dteYw+Pj6UnKkkN1Zub24AADAaLk8lJiWCjZ0wQl9SX3Vja30AABCnsb0aGxqMlaM4OThHSEdocoV4h5kAEUDLsrVxAAD65ub721xUAAAReklEQVR4nO1dC2MUN5KuhOWyud1cotK7Sq++68CETLAJxDgJj2PZJNzd//8/V5qxmTHGGEM8nl76S/B0qyW19OlVJalLADNmzJgxY8ZluPfzt+dw/2LvLjowhc86htML7a8rmTvBvR9e/fLtdx33769+7sr/W8/9r7aWrfsfhYeH+kwU5tCcXI3DdSf3WnHv56MnR788fvr4xbOjo6dPH//x/NEf2/XCfQ9AnFFKX4of7U/CxWGGoA0EYoXyQEUIGCyosGxgtcvo1jVFVwPkswSt4EjdTAavgHs/3/vve0dH9x4/eXF0dPTixaN7Tx6d5cJG+Acc+6XGA3oIKy7smOhQbvBYW/HzPQxL8yP8CkOjA/eQfmTqQRmOKx/CmBQ8jPDj/refez8/evHo5dGTH345evT85cs/nr08ev7d1nP3vdL0TxjrT8w/xgX8tuLiIZlf4fAh0PdJ/PwKbTC/KaGk1qXwMB6fBD42bQFB7g6lYU2Aix/uf/vq6c8/3H32yw8d96Xr3O4vehtR/4ADfejpoT6Gf664OMhOKsjxYM33DqTaCBc/9epRyyEosL+h6TkPTPoA6gBB2Wlwcffu/UePfn/64uj5o6NnTx5L53mm7zyWVlD1AFwrwTIsNZhlcEMlj42TH6UtHNPQ+NjFNgywPPBVWpP9TYIeHi+g+SZN6XhUB+HCNOwLOhevpKd4+vL3ly9ePP7j6NuzXHwo6E+IY9foXHz3+/Pnv7x49OzJ80dPnt3/c7iYIjoXd++LbPHtq/uv7sv/dz9dLv7nf//rPG46UTeE//vPt2DreSh63fSdPXFheD0i2PX9xTBv7TfM9g0zWLe+JFDu1Auei8PY106nCeAzMUkEtHkB+f7cAF8g4/k30vE+qDBkyAoqWSuDowoZogriIm7EAWw1WUmGlPbWaJOZvNwga2dZAtUMWgEH473KhCqbTMnKjRY/YIJbKDOq4CQmbOA5k0KRcKu3pJn1aRyZIVlLjIQi8UYn98zWKlCKtVyDstlXLCAJ0EoiNCyST5ZhTjntwFtVIFtt0CoRjDkbXAA3F65GR4WUQ4iSo4zVpAoZirglrgpiMSVjkscBgosl6Uw1UAGsIYTEoKFglMAVapOgCYYQfERDLUhsSRxST3KEVF2TcBRVCtYrUfdSNrESJbksPpUEPVSCGCRXRYLr0qJ2RqKR2CNgRM+6iCJQc44m59AjlkLzNhlT+ptKJXm5igGbTjaB0UmCXgVJskNBsmVS8pJrUU2k3fisreRfA4qr5s6V08FKmSdO8ixyYBHeM2nvJXDNNnpJjtVIJN5SCoWiF+0lS5K1/ETJcAWyRcJ7LQQElpeRlC56TTYQoEpVnFH19yIMJlppXDVJUYEWhchT1EFqpM1KSgJ1tBJEqpokAZIvwQdJVIpREo/IqYGpWecrcbGCOfdrtlrb9pU5fym/+pzfnHnr9o2qat760nM+1g/ym8/ffr/6q+islyv3GDPeis2Yoc9Quir3kkwKMILt8z29mkM6F4FRJz+vJXKWziK61Ctrdq8dz3f+m6qlTgr69XDG0lqSkpZVZfRx+GbIzatWycf8RlbeG9KuizS+YjFSDJVysHIhOaWCQfoiW7xk3eok+c/RBSX9S+dJ+rOckwUfis2gSigoo3Oy1QZuxtdYOGcdZQAoTDSKfyu3mKN0C+yYUpTIUy4sf6VP5CidNhFiQButdI4uKulgVOQSwEGUvoi1ESXJOCwSR7BYqEqJZC1BwEoeJBU+JsmNRc2JB18I7PnSegcqtIqSPxgscpHBrQZti/Sf8nYqFKrlSNK7i/hB6HsfLwUnzNOoeg8JoUk/Ba5y5IQ+earWo7TbYhK20ku7sLdN3qNSNDWZ0AccyiQjh+UmnqXDbbZKvBiTjBoSjWnooEg/LAOQ3EoUfbTr5S/DgguZciuSMG9l2GQZNPow1VPB2hfp5CVmkgJKVri40kRcKy6jBd3HEuVJSI4ygkh5q0IWPcp4IfKD9YahRVdQysbGLhZFE6S7DoRZRAfSMmgEGXykFgQlckXyBnX2hkT/dTIcyWMRJgz6YmRUACbluXhFgbJH77WTYnAWZQgnGdxlCHNaqhM5GRokLT2nxicXPTrDMq4EJaJPbxLR9JFLU0bS4Ii9pEhGNpu5j3Qg498VcL5Z0bmO+3KY/AHN80NwzQPDPO68BqMI9Ur6Jyd/5dJdHuRfFb3nqoVyqX0MaarV/Z/Pvi4kLomS0aoSlsKpkvpkG40j07VqZYx0+o6c+4S5mDFjxowZN4tPWEw7h09XSjsP9W+TwE64uPPg1gTw4C874eLWZxPArY/igk9mOcxmkoLA0OmaWV87Ei80HS5YuQBIoK4+VXPIVQWlR7sglTnb3J2azskVFYDC4OoxtzgdLrQvUEwCrS/P/BtorQ005sGltqiNh2r0MESKaTA8eEvN1NRG7SbDhfMRguX1ouzVkKDqmin0udCo+8JAhRjZBqyi47NNgyrQ0nTqBaEqKllPf/peIj79mQwXO8CdW7cngN2MqfzFFPDlTuaqZhl8g5mLDWYuNpi52ODO377ce3yxKy72f0z9/OudcXHTctSluH0ZF33DhlOrr4vqqSpqttWWCsSr7TBuWG2M0yKDbzZupWhK69tFpsGFGSElN17AxQDU4pBErYBWc2uh1hSx+pAAW2y2jnAQxpgaVAO2laQXrYpH8ZMGZ73oZmOtwUyDC9AGmS/SUEcVFwFTQ8ptmTC0hR6gVjeMUA+aGnGEwWNbhL79MS2bq0Ma/DDmumgeLY22JHugp8JFcimYdMFEdd+k6axiZVjUWaeYRZ9Vvv+1xMYhA3vHSpoJehIX9l5uugd2zmil+3TPVNoIsDNO/lzScXwkJsLFTjCFud9dcaH+ff+xE4UdZhl8GzMXG8xcbKD+MgHsiIs7Dz7fd9z6cldcTEC+eC+d3dF5Scw5ON38uvVQvXEhIpx4dJNYE+hckEjM/ds/e2H/VpGNSN8oAjZ0j0Zk7ebdITQRtH2LAUgp8gr4WLRW2z1Eg84Cl76GqKaxViRcqOYwRIUKL/ygIlX0bUx+EL2rItRUh6q9SoOopI1Hnduijl50VXk6DKW12N15pPUa4jBMYg2x14vAnBNoCOUiLmLCoSZuZdFydX4sOsVGCiX7NcFYOA1YVY7QVIvF6mptFOW+eRKdnpMZ4yT01C/AVBcyFyHkXV3GGlf+dM+f/kyDi91gCvOdO+Pim7/tPf6+Iy5mGXyDmYsNZi42mLnYgP++/5j11Nd4cGdXXOy/rHXrI7hwef3RPduNovravsZaQjUxGB27dD8NLjJyoVLApyvu4lOH1K1xpGVqPulUagE9utoaVzskX0Uvs7a5uizTWEMULhQGSB7decMal3GB49AXUofM40I3FSosU63JjkljGo0drKWBYwrLSawhdi60VlEHhgvV1AtgGChbgmwdobV9csP3hUR2kdmraLVygZI42knMXwgXqywopcx17Od7bQdmGlzsBvOYuoH66/5jVx9lzzL4BjMXG8xcbDBzscGd21/tOW7v5oNMmIJudus9uDhrv+7tRvQ2DtuLje61bzUNLowTsfMio58CO5ByyihM1lXHQXWjo1rDsqJxzhjVLWk65SUK100n+uxMUOubMQRcNFrkKcjgwkX0gZO+2O6WG/KwGHmM0Zu6tDrUsdWSRTsfF2ONw5BqaWMSjbW2BfihSPaTMLAkp7EFG2AoKUxgDbHXCyowMl64pZEkr7XWIXUuaqqj5LrVLPXCjoFaEG29prHFxHURQTedFgudR9vN5IWhWKkXqU1hDVG4sIVKN/J3ccXY6g/MxnqmOble/axWpU2302rWD1YWPPF1EJxGG9kRZi62uPjspuWHy/DZzriY5c4NZi42mLnYYOZiA/Ufe4+dcbH/850PdsfF/ssX75ELldafGZ5xdAxhffaD8yJZcvJn/HjVd4FCPwHOeASbp8FFUJRMtHAhMLkggvrSi8YRkhJlLhVq1i1MTlblZT/LqJvHscUvKZH4cdAqlyzxeuxriLmVKegjklWOsDTvWDPD6PQQc4ollOSDKUOtC0bgcbAL0dyCUKSLiaP4qSXkSlotltS/4OxriK6muJzCXtdb3bh8NI3fYSubW4mofZAyJ8vkElqUOmKax6SqLVp1u+Q55kBF/DAqtkZ1k/GRVcAmipmexPwFdFPn+R1bwT8SJz3IFNYQ36fv/HMwj6kb8E1LUpdjZ1zMMvgGMxcbzFxsMHOxwZ2vvt5zfLM7LvZdvrj91XVm32xf7j0Xn33VG3I/X+qyo2PqyalmxkJtpwf9jKfZJYRFcyc32DfBrsJU0ONgFs1AnQQXjKFoR/aSDY0V0gJrWuZ+6lSoiyG3xdBajaKnLWrylEVXjamlVoem5fkCIQoXSvRbuZjCXtevwITiG7hyiUXXGlrqCmpscjnEpA54ga3FFOtCt2LNQlcdh0VhYQPamHGEJC5p4DH4RZoEF1BAeeUu2+dqWFqS6v9WVo65f7MsjUJJ61g96H955WT6jetX2bHjlYPTk2gju8LMxYS4uN4x9QxmuXODmYsNZi42mLnYYO/3xu/qI0TYf7trD/66Qy72fEz9/KO46EeB9uW2ftC52T6W3oKjU8MXSIYIyE6BC6tNUKfHEF8JNDhvW3IwoIu8sJQJQz/LFQ6o5ZJU5AiUm6sHfgJriMJFWh0anK50xOwJRG1tlWs1NaRaBjtWF8aWTGlj4ZJGQ62fueFqV9/2fg1RuFDVcui2Rq8Mbl4U0aogNxRGQ4poatGiqkMQVT17oYilnoyimKX9X0MULkThlIRf3yHA6vRnAlzsDPu+hnhrh1zsvc2Hne10nWXwbcxcbDBzscHMxQZ3vv5mn/H1rr5lX3Gx3/LFLofUfeeii1pr06zX84G/t0mt7OdU2Pu1IuEiRo8I4QPUkfeAaV17W68zToAL3TjZLetHfy6Wdom1jTC0YQJcsEcrCvY1ceHkP9U/2+W9t30sXJjr6ivOYc+52PE4ctNmW9+JnXKhzH5jh1TMMvgWZi42mLnYYO/O3LhBLvZtDXFX5zS9lYv9ki9uf/QuX946svx01ZAB0Jx16iOoPOiunrv9GaY95MJo5y1Qesdnh++ionmVXVYLQqIG/dr5ERoarVjptEDQDkkbGJLJyBpI9zM3eP/soggX1ut+moS68pH0K2QvmUzYGiIuK9Ci4hAruKH5oeloh36IZKw2m8XS1mQHvz5zo417t4YoXCCFUE5MunwAhooJuwEdNbQEqSaKtYmy283mDDalbKv1kW1gjN3KDjGmUUVhcA/biJJUZnLXt2b4Jvj0Z/+4uDnceXDT6tcZfH6TXPAX+4Vdna/xNswy+AYzFzNmzJjxCWKnM6L7jZQ1GO/cetVnPV3cl18DrdZhTV6vrygGrfo99+lkTytH8ZCzOwmj+ndozLwO7yAAifpvui1L7A/655xa9HtxU2rt6yJ7okpihX68STQkr0SwZJwJ6Lp5WgPrdIJfm86kbrW2289cpb/f0mouYf0C51bTCs5lUHadk360QrYqW/DWkt+qCwkipag0QvO5hBBtoJQJCqNFQq+Bs86WGHL2ObPPypPX1nmtQz95MyIGFaz1TrtifUbM6JhRC51og5YsiZP3XBALUNaqWMqYrcWLZhWE/6KyBM9oCTs8esuAooKrAOizR60kQnnuvSQONWZtrUb5J4lQymOQoKQtkw2KbD8rw3uLPU9W+MKVBSi58dtpqEGnmnPVEEORy2KST1J4GXRPrmSp5M4Je5YXShySmux7Esl6KUEt7lYHq8Rr1kRZwIqFG+iBNIHE4j0yadZRiqRKJjn3cHTRTmSJVQoAoUKV9HPPJxotudNSAFrelE2UAtXseyJQ2U6ZVxlZXHLpJ56S0CXJkiTkbu/KCpPyVszCXuciWEm1JFBCXLEdneJMhdrAf9is0UfBvj0p26CLHpjdqfAzZsyY8a+M/wekmrnoWMcQ9AAAAABJRU5ErkJggg==\' </div>')">
+            <h3> Dataset 1</h3>
+        </div>
+        <div>
+            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstPWQROxn28TVPOV4hCoGXuOxVbx1FH3TNQ&s' width = 100px height = 100px onclick= "changeContent('<div><div> <p>Test Text blah blah blah </p> </div><div class =\'first-div\'> <img src =\'png1project.png\'> <img src = \'png2project.png\'></div> </div>')">
+            <h3> Dataset 2</h3>
+        </div>
+        <div> 
+            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstPWQROxn28TVPOV4hCoGXuOxVbx1FH3TNQ&s' width = 100px height = 100px onclick= "changeContent('<p>Hey guys 3 </p>')">
+            <h3> Dataset 3</h3>
+        </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div id = 'content-display' class="content">
+
+    </div>
+
+   
+</body>
+</html>
