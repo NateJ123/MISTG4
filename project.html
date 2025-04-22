@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = 'project.css'>
+
+</head>
+<body>
+    <script>
+        function changeContent(newContent) {
+            const contentDiv = document.getElementById('content-display')
+            contentDiv.innerHTML = newContent;
+        }
+        
+    </script>
+    
+    <h1 class = 'topmargin'>
+        <img  class = 'blockman' src = 'https://images.seeklogo.com/logo-png/14/1/united-nations-logo-png_seeklogo-145466.png' height = 50px width = 50px>
+        Responsible Consumption and Production</h1>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div class = 'full'>
+        <div class = 'gridman2' height = 10%>
+            <div>
+                <a href = "https://sdgs.un.org/goals/goal12#targets_and_indicators" target = "_blank"><h3> About </h3> </a>
+            </div>
+            <div>
+                <a href  = "https://www.sdgsdashboard.org/" target = "_blank"><h3> Data Sources</h3> </a>
+            </div>
+            <div>
+                <h3> </h3>
+            </div>
+        </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div>
+        <img  class = 'nostretch' src = 'https://i.pinimg.com/originals/b9/de/c6/b9dec6676e8fa03674971f635b90498d.gif' height = 300px width = 100%>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <h1 class = 'center'> Data Visualizations</h1>
+    <div class = 'black'>
+    <div class = 'gridman'>
+        
+        <div>
+            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstPWQROxn28TVPOV4hCoGXuOxVbx1FH3TNQ&s' width = 100px height = 100px onclick= "changeContent('<div><p class =\'centertext\'> As you can see from the graphs most of the countries have between 0 and 10M Tonnes of food waste. The outliers are China and somewhat India and this is because their populations are way bigger than most other countries so overall they produce more food waste. From the other graph, we can see that the United States has the most Municipal Waste recycled and this is because of population, strong recycling infrastructure, and government policies. The municipal waste of South Africa drops off in 2018 due to the Chinese ban of contaminated recyclables which South Africa had been taking advantage of. The economy of South Africa was also not doing well in 2018 which was another contributing factor.</p><div class =\'first-div\'>  <img src =\'GlobalFoodWasteTons.png\'> <img src = \'TotalMunicipalWasteRecycledTop5.png\'</div></div> ')" onmouseover = "document.getElementById('bottommargin').innerText='The total municipal waste of South Africa dropped off starting in 2018. '" onmouseout = "document.getElementById('bottommargin').innerText = 'Click a circle to learn more...'">
+            <h3> Food and Waste</h3>
+        </div>
+        <div>
+            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstPWQROxn28TVPOV4hCoGXuOxVbx1FH3TNQ&s' width = 100px height = 100px onclick= "changeContent('<div><div class = \'first-div\'> <p class = \'centertext\'>As you can see from the graph the Global Average Renewable Energy Production was actually higher in 1990 than in 2018. The graph shows that a low was achieved in 2007 for global average renewable electricity production. The global average renewable electricity production fell from 1994 to 2007 because of how rapidly countries were developing and thus using a lot of fossil fuels. It grew post 2007 because of the government subsidies introduced and the drop in price of solar and wind power. </p> </div><div class =\'first-div\'> <img src =\'GlobalRenew.png\'> </div> </div>')" onmouseover = "document.getElementById('bottommargin').innerText='Renewable energy production hit a low in 2007.'" onmouseout = "document.getElementById('bottommargin').innerText = 'Click a circle to learn more...'">
+            <h3> Energy Production</h3>
+        </div>
+        <div> 
+            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstPWQROxn28TVPOV4hCoGXuOxVbx1FH3TNQ&s' width = 100px height = 100px onclick= "changeContent('<p class = \'centertext\'>As you can see from the graphs below, Africa and parts of the Middle East have the highest rents which means their economies rely on extracting natural resources. You can see most of Europe, America, Canada, and China do not rely on their natural resources to produce money for their country. The other graph shows the Americas Footprint by Raw Material Type. Most of the Americas footprint is from Agricultural biomass because a lot of land is used for farming, ranching, and forestry. The lowest is metal ores because we do not focus on massive construction and manufacturing like China.  </p> <div class = \'first-div\'><div><img src = \'NaturalResourcePercentGDP.png\'></div> <div> <img src = \'AmericaRawMaterialFootprint.png\'> </div></div>')" onmouseover = "document.getElementById('bottommargin').innerText='Agricultural biomass is the Americas biggest material footprint.'" onmouseout = "document.getElementById('bottommargin').innerText = 'Click a circle to learn more...'">
+            <h3>Resources / Materials</h3>
+        </div>
+    </div>
+</div>
+    
+   <h2 class = 'centertext' id ='bottommargin'> Click a circle to learn more...</h2>
+   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div id = 'content-display' class="content">
+
+    </div>
+
+   
+</body>
+</html>
